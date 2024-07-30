@@ -1,0 +1,97 @@
+---
+layout: default
+permalink: /contact
+title: TRAITEUR 91 I COMMENT NOUS CONTACTER I 01 60 92 52 40
+description: Pour passer commande ou demander un devis sur la réalisation d’un évènement, n’hésitez pas à nous contacter via notre site web ou nous appeler directement
+keywords: page contact
+---
+
+<section class="contact">
+    <div class="container">
+        <div class="contact_section">
+            <div class="contact_bg">
+                <img src="{{site.baseurl}}/assets/img/contactbg.png" class="contact_bg-img" alt="Shape" />
+            </div>
+            <div class="contact_box">
+                <div class="row contact_row">
+                    <div class="col-md-6">
+                        <div class="contact_box-content">
+                            <h1 class="contact_box-content--title">Contactez-nous</h1>
+                            <p class="contact_box-content--p">{{site.data.company.address}}</p>
+                            <p class="contact_box-content--p">Appelez-nous: <strong>
+                                    {{site.data.company.phone[0]}}</strong>
+                            </p>
+                            <p class="contact_box-content--p">Ecrivez-nous: <a
+                                    href="mailto:{{site.data.company.email}}">{{site.data.company.email}}</a></p>
+                            <ul class="contact_box-social">
+                                <li class="contact_box-social--icon"><a href="https://www.facebook.com/Heliantheme/"
+                                        class="contact_box-social--icon--link"><i class="fab fa-facebook"></i></a></li>
+                                <li class="contact_box-social--icon"><a
+                                        href="https://www.instagram.com/cuisine_heliantheme/?hl=fr"
+                                        class="contact_box-social--icon--link"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact_form">
+                            <form class="form" id="contactForm" method="post"
+                                action="{{ site.data.company.url.notify }}">
+                                <input type="hidden" name="lang" value="fr">
+                                <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                                <input type="hidden" name="type" value="contact" />
+                                <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                                <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                                <input type="hidden" name="firstName" value="" />
+                                <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" class="contact_form-input" id="name" name="name"
+                                                placeholder="NOM">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="contact_form-input" id="email" name="email"
+                                                placeholder="E-MAIL">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="contact_form-textarea" id="message" name="message" rows="5"
+                                                placeholder="VOTRE DEMANDE"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                                    </div>
+                                    <br />
+                                    <div id="contact-form-response" class="contact_form-response"></div>
+                                    <input style="display: none" type="submit" value="Submit"
+                                        class="wpcf7-form-control wpcf7-submit" />
+                                </div>
+                                <div class="checkbox d-flex">
+                                    <input name="condition" type="checkbox"
+                                        style="height:2rem; width:2rem; vertical-align: middle;" />
+                                    <span class="contact_space-form--label"
+                                        style="color: #000 !important; margin-left: 1rem; margin-right: 2rem; font-size: 1.4rem;">
+                                        En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                        de vos données par ce site *</span>
+                                    <i class="fa fa-info-square" aria-hidden="true"></i>
+                                </div>
+                                <div class="form-group contact_form-button">
+                                    <input type="submit" class="contact_form-button--btn form-submit" id="submit"
+                                        name="submit" value="Envoyer">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

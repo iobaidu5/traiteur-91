@@ -1,0 +1,21 @@
+<title>{{ page.title }}</title>
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="{{ page.description }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:site_name" content="{{ site.data.company.name }}" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"{{ site.url }}{{ page.url }}",
+"description":"{{ page.description }}",
+"name":"{{ page.title }}"
+}
+</script>

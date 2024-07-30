@@ -1,0 +1,27 @@
+####################
+# CONFIG
+####################
+name: BHInternet
+
+phone: 
+    - 01 60 92 52 40
+    - 01 60 92 15 71
+
+email: info@heliantheme.com
+
+address: 5 Avenue de Laponie - 91940 LES ULIS France
+
+webisteAddr: www.traiteur-91.fr
+website: 22 # prod
+
+recaptcha:
+  client: 6LeO1wwbAAAAACDL7NdjGQ4_wn4mAlwbo6_sXiYh
+  server: 6LeO1wwbAAAAAPRUCcr1O7sRCvu-CPvS5VTRwrSl
+
+lang: fr
+url:
+  #notify: 'https://q8zptub5j7.execute-api.eu-west-2.amazonaws.com/dev/notify' # for dev
+  notify: "https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify" #prod
+  redirect: "/"
+
+

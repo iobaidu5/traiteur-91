@@ -1,0 +1,197 @@
+---
+layout: default
+permalink: /devis
+title: TRAITEUR 91 I ESTIMATION DE VOTRE EVENEMENT I 01 60 92 52 40
+description: Venez découvrir nos prix imbattables pour nos menus et cocktails exclusifs pour impressionner vos invités. Nous fournissons un devis gratuit en ligne !
+keywords: page devis
+---
+
+<div class="devis-container">
+    <div id="devis">
+        <div class="container">
+            <div class="about_content py-4">
+                <h1 class="about_content-head">L’estimation de votre prestation</h1>
+            </div>
+            <div class="ml-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form role="form" id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
+                            <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                            <input type="hidden" name="type" value="devis" />
+                            <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                            <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                            <input type="hidden" name="firstName" value="" />
+                            <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                            <div class="row column-container">
+                                <div class="col-md-5 width-120">
+                                    <fieldset>
+                                        <div class="devis_title">COORDONNEES</div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label"
+                                                        for="company">Entreprise(facultatif)</label>
+                                                    <input type="text" class="form-control" id="company" name="company">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="firstname">Prenom</label>
+                                                    <input required="" type="text" class="form-control" id="name"
+                                                        name="name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="lastname">Nom</label>
+                                                    <input required="" type="text" class="form-control" id="lastname"
+                                                        name="lastname">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="address">Adresse de
+                                                        livraison</label>
+                                                    <input type="text" class="form-control" id="address" name="address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="zipcode">Code Postal</label>
+                                                    <input required="" type="text" class="form-control" id="zipcode"
+                                                        name="zipcode">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="city">Ville</label>
+                                                    <input type="text" class="form-control" id="city" name="city">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="email">E-mail</label>
+                                                    <input required="" type="email" class="form-control " id="email"
+                                                        name="email">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="phone">Telephone</label>
+                                                    <input required="" type="text" class="form-control" id="phone"
+                                                        name="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <fieldset>
+                                        <div class="devis_title">DEMANDE</div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label mb-3"><strong>Prestation
+                                                            souhaitée</strong></label>
+                                                    <div class="checkbox" style="margin-top: 0;">
+                                                        <label class="devis_label"> <input type="checkbox"
+                                                                name="checkbox1"> Plateaux repas
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox" style="margin-top: 0;">
+                                                        <label class="devis_label"> <input type="checkbox"
+                                                                name="checkbox2"> Cocktails</label>
+                                                    </div>
+                                                    <div class="checkbox" style="margin-top: 0;">
+                                                        <label class="devis_label"> <input type="checkbox"
+                                                                name="checkbox3"> Buffet</label>
+                                                    </div>
+                                                    <div class="checkbox" style="margin-top: 0;">
+                                                        <label class="devis_label"> <input type="checkbox"
+                                                                name="checkbox4"> Mariage
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox" style="margin-top: 0;">
+                                                        <label class="devis_label"> <input type="checkbox"
+                                                                name="checkbox5"> Repas privé (Anniversaire, Baptême..)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="nombres">Nombre de convives
+                                                        approximatif</label>
+                                                    <input type="text" class="form-control" id="nombres" name="nombres">
+                                                </div>
+
+                                                <div class="form-group has-feedback ">
+                                                    <label class="devis_label" for="date1">Date de la prestation et
+                                                        heure</label>
+                                                    <div class="input-group bootstrap-datepicker">
+                                                        <input type="date" class="form-control date" id="date"
+                                                            name="date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                </fieldset>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group has-feedback">
+                                    <label class="devis_label" for="message">Précisez votre demande (Budget souhaité, type de boisson, service..)</label>
+                                    <textarea rows="6" name="message" class="form-control" id="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                                    </div>
+                                    <br />
+                                    <div id="devis-form-response"></div>
+                                </div>
+                                <div class="checkbox d-flex">
+                                    <input name="condition" type="checkbox"
+                                        style="height:2rem; width:2rem; vertical-align: middle;" />
+                                    <span class="contact_space-form--label"
+                                        style="color: #000 !important; margin-left: 1rem;">
+                                        En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                        de vos données par ce site *</span>
+                                    <i class="fa fa-info-square" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group contact_form-button mx-auto mb-5 mt-2 pb-5">
+                                <input type="submit" class="contact_form-button--btn form-submit" id="submit"
+                                    name="submit" value="Envoyer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

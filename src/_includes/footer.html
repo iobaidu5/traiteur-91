@@ -1,0 +1,82 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-2">
+                <a href="{% link accueil.html%}">
+                    <div class="footer_logo">
+                        <img src="{{site.baseurl}}/assets/img/footerlogo.jpeg" class="footer_logo-img" alt="logo" />
+                    </div>
+                </a>
+                <div class="footer_content">
+                    <a href="tel: {{site.data.company.phone}}">
+                        <p class="footer_content-p">{{site.data.company.phone[1]}}</p>
+                    </a>
+                    <a href="mailto: {{site.data.company.email}}">
+                        <p class="footer_content-p">{{site.data.company.email}}</p>
+                    </a>
+                    <p class="footer_content-p mt-4">{{site.data.company.address}}</p>
+                </div>
+                <ul class="footer_social">
+                    <li class="footer_social-icon"><a href="https://www.facebook.com/Heliantheme/"
+                            class="footer_social-icon--link"><i class="fab fa-facebook"></i></a></li>
+                    <li class="footer_social-icon"><a href="https://www.instagram.com/cuisine_heliantheme/?hl=fr"
+                            class="footer_social-icon--link"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <div class="footer_header">
+                    <h3 class="footer_header-title">À PROPOS</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul class="footer_content-ul">
+                            <li class="footer_content-ul--li"><a href="{% link accueil.html %}"
+                                    class="footer_content-ul--link">Accueil</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link quiSommesNous.html %}"
+                                    class="footer_content-ul--link">Notre entreprise</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link sandwich.html %}"
+                                    class="footer_content-ul--link">Plateaux Repas et sandwich</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="footer_content-ul">
+                            <li class="footer_content-ul--li"><a href="{% link petit.html %}"
+                                    class="footer_content-ul--link">Petit déjeuner et pause</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link cocktails.html %}"
+                                    class="footer_content-ul--link">Cocktails et buffet</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link chocolat.html %}"
+                                    class="footer_content-ul--link">Chocolat et café</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link service.html %}"
+                                    class="footer_content-ul--link">Nos réalisations</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link contact.html %}"
+                                    class="footer_content-ul--link">Contact</a></li>
+                            <li class="footer_content-ul--li"><a href="{% link devis.html %}"
+                                    class="footer_content-ul--link">Devis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="footer_header">
+                    <a href="{{site.baseurl}}/assets/files/carte-heliantheme.pdf" target="_blank">
+                        <h3 class="footer_header-title">TÉLÉCHARGER NOTRE CARTE</h3>
+                    </a>
+                </div>
+                <div class="footer_content-image">
+                    <a href="{{site.baseurl}}/assets/files/cartepj.pdf" target="_blank"><img
+                            src="{{site.baseurl}}/assets/img/pj1000.png" class="footer_content-image--img"
+                            alt="leafs" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 100,
+        duration: 400
+    });
+</script>
+<script src="../assets/js/index.js"></script>

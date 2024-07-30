@@ -1,0 +1,103 @@
+<header class="header">
+    <div class="header_top">
+        <i class="fas fa-bars toggle tselect"></i>
+        <div class="header_top-devis">
+            <a href="{% link devis.html %}">
+                <div class="header_top-button">
+                    <a href="{% link devis.html %}" class="header_top-button--btn">Demandez<br>
+                        votre<br>
+                        devis </a>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="header_navbar">
+        <a href="{% link accueil.html%}">
+            <div class="header_navbar-image">
+                <img src="{{site.baseurl}}/assets/img/logo.png" class="header_navbar-image--img" alt="Logo" />
+            </div>
+        </a>
+        <div class="header_navbar-main">
+            <nav class="navbar navbar-expand-lg Navbar">
+                <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                    <ul class="navbar-nav Navbar_nav">
+                        <li class="nav-item Navbar_nav-item">
+                            <a class="nav-link Navbar_nav-link" href="{% link quiSommesNous.html %}">Notre
+                                Entreprise</a>
+                        </li>
+                        <li class="nav-item Navbar_nav-item">
+                            <a class="nav-link Navbar_nav-link" href="{% link accueil.html %}">Traiteur <i class="fas fa-angle-down"></i></a>
+                            <div class="drop-down">
+                                <a href="{% link sandwich.html %}"> <span>Plateaux Repas et sandwich</span> <i class="fas fa-angle-right"></i></a>
+                                <a href="{% link petit.html %}"><span>Petit- Déjeuner et Pause </span> <i class="fas fa-angle-right"></i></a>
+                                <a href="{% link cocktails.html %}"><span>Cocktails et buffet </span> <i class="fas fa-angle-right"></i></a>
+                                <a href="{% link chocolat.html %}"><span>Chocolat et café</span> <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item Navbar_nav-item">
+                            <a class="nav-link Navbar_nav-link" href="">Nos services</a>
+                        </li> -->
+                        <li class="nav-item Navbar_nav-item">
+                            <a class="nav-link Navbar_nav-link" href="{% link service.html %}">Nos Réalisations</a>
+                        </li>
+                        <li class="nav-item Navbar_nav-item">
+                            <a class="nav-link Navbar_nav-link" href="{% link contact.html %}">Contact</a>
+                        </li>
+                        <li class="nav-item Navbar_nav-item">
+
+                            <a class="nav-link Navbar_nav-link" href="{% link devis.html %}">Devis</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <nav class="navbar-toggle">
+
+        <a class="link" href="{% link quiSommesNous.html %}">Notre
+            Entreprise</a>
+        <!-- <a class="link" href="">Nos services</a> -->
+        <li class=" Navbar_nav-item">
+            <a class="nav-link Navbar_nav-link" href="{% link accueil.html %}">Traiteur <i
+                    class="fas fa-angle-down"></i></a>
+            <div class="drop-down">
+                <a href="{% link sandwich.html %}"> <span>Plateaux Repas et sandwich</span> <i
+                        class="fas fa-angle-right"></i></a>
+                <a href="{% link petit.html %}"><span>Petit- Déjeuner et Pause </span> <i
+                        class="fas fa-angle-right"></i></a>
+                <a href="{% link cocktails.html %}"><span>Cocktails et buffet </span> <i
+                        class="fas fa-angle-right"></i></a>
+                <a href="{% link chocolat.html %}"><span>Chocolat et café</span> <i class="fas fa-angle-right"></i></a>
+            </div>
+        </li>
+
+        <a class="link" href="{% link service.html %}">Nos Réalisations</a>
+
+        <a class="link" href="{% link contact.html %}">Contact</a>
+
+        <a class="link" href="{% link devis.html %}">Devis</a>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    const nav = document.querySelector(".header");
+    const bar = document.querySelector(".tselect");
+    const navToggle = document.querySelector(".navbar-toggle");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            nav.classList.add("fixed");
+        }
+        if (window.scrollY < 100) {
+            nav.classList.remove("fixed");
+        }
+    })
+    bar.addEventListener("click", () => {
+        navToggle.classList.toggle("show");
+    })
+    window.addEventListener("click", () => {
+        if (!event.target.matches(".tselect")) {
+            navToggle.classList.remove("show");
+        }
+    })
+</script>
